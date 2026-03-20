@@ -1,3 +1,15 @@
+/*
+Questions to answer at top of client.c:
+(You should not need to change the code in client.c)
+1. What is the address of the server it is trying to connect to (IP address and
+port number). ANS IP: 127.0.0.1", PORT: 8000
+2. Is it UDP or TCP? How do you know?: TCP l 36 SOCK_STREAM
+3. The client is going to send some data to the server. Where does it get this
+data from? How can you tell in the code?: STD_IN
+4. How does the client program end? How can you tell that in the code? while
+loop, user signals end. read() returns 0. error if read returns -1
+*/
+
 #include <arpa/inet.h>
 #include <stdio.h>
 #include <stdlib.h>
